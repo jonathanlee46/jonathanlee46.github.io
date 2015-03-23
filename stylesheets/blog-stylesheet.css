@@ -1,0 +1,34 @@
+html {
+  color: black;
+  background-color: white;
+
+}
+
+
+#header{
+
+  text-align: center;
+  font-size: 300%;
+  background: blue;
+  color: white;
+}
+
+#links{
+  display: inline-block;
+  background-color: black;
+  width: 20%;
+  color: white;
+}
+
+#article{
+  display: inline-block;
+  width: 75%;
+}
+#links2{
+
+}
+#line{
+  transform-origin: 0 100%;
+  height: 1px;
+  background: black;
+}
