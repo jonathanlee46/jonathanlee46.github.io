@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+
+  <div id="header">
+    <p>
+      WELCOME TO MY BLOG!
+    </p>
+  </div>
+
+  <hr>
+
+
+  <div id="links">
+
+    <p>
+      Links go here
+    </p>
+  </div>
+
+  <div id="article">
+
+    <h1>Of Methods and Maps</h1>
+    <h4>March 21, 2015</h4>
+
+    <section>
+      <p>
+        The map method in Ruby is an extremely useful tool when we are dealing with enumerable objects.  Methods such as #map allow well-grounded rubyists to iterate through enumerables more efficiently and with staggeringly little code.  Only by mastering the logic behind chaining large groups of methods into fewer and fewer lines of code can one advance in their knowledge and skill of Ruby.
+      </p>
+      <p>
+        The method I'll talk about this time is #map.  This is a powerful tool that takes a line or even block of code, and iterates through an enumerable and runs this code for each element inside.  What does this mean?  For simpler operations, such as adding an inputted value to every integer in an array, one can simply use array.map and apply the given value in any way shape or form to every single element contained in array.  This cuts down on a multitude of code by iterating through the enumerable without having to use loops.  
+      </p>
+      <p>
+        For example, imagine we want to add x to every integer contained inside an array.  In other languages such as C++, one would have to use a while or for loop to iterate through the array, then use if statements to determine the values contained within, and finally act out the code they wish.  In ruby, we can solve this by simply returning "array.map!{|value| value.is_a?(Integer) ? value + x: value", which would iterate through every element in array, check to see if each value is indeed an integer, add x to it if so, and do nothing if else.  Ruby is the best!
+      </p>
+    </section>
+  </div>
+</main>
+
