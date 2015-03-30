@@ -34,20 +34,20 @@
       </p>
       <p>
         Take for example, class wo.  I've initialized it with the string @variable.  Because I've done so by first using an @ symbol, it can now be accessed anywhere within the wo class.  One such place that it can be accessed are from other methods within the wo class.  I've created a method called print, which will simply print the instanced variable!  However, any methods outside of the wo class, such as the method pan, will not be able to access @variable, and it will throw errors.
-
-        class wo
-          def initialize
-            @variable = "poi"
-          end
-
-          def print
-            p @variable
-          end
-        end
-
-        def pan
-          p @variable
-        end
+        <DL>
+        <DT>class wo
+        <DT>def initialize
+        <DD>@variable = "poi"
+        <DT>end
+        <hr>
+        <DT>def print
+        <DD>p @variable
+        <DT>end
+        <DT>end
+        <hr>
+        <DT>def pan
+        <DD>p @variable
+        <DT>end
 
       </p>
   
