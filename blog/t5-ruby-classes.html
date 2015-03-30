@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+
+  <div id="header">
+    <p>
+      WELCOME TO MY BLOG!
+    </p>
+  </div>
+
+  <hr>
+
+
+  <div id="links">
+
+    <p>
+      Links go here
+    </p>
+  </div>
+
+  <div id="article">
+
+    <h1>Of Instances and Variables</h1>
+    <h4>March 25, 2015</h4>
+
+    <section>
+      <p>
+        Let's talk about instance variables.  These variables are one that span the entire existence of a class, and no more.  Thus, if you were to create an instance variable, any methods or any code within that class could access this variable.  Anything outside of the class, such as methods of other classes,would not be able to access it.  We mark these variables by using the '@' symbol before it.  Just like @this !
+      </p>
+      <p>
+        Take for example, class wo.  I've initialized it with the string @variable.  Because I've done so by first using an @ symbol, it can now be accessed anywhere within the wo class.  One such place that it can be accessed are from other methods within the wo class.  I've created a method called print, which will simply print the instanced variable!  However, any methods outside of the wo class, such as the method pan, will not be able to access @variable, and it will throw errors.
+
+        class wo
+          def initialize
+            @variable = "poi"
+          end
+
+          def print
+            p @variable
+          end
+        end
+
+        def pan
+          p @variable
+        end
+
+      </p>
+  
+    </section>
+  </div>
+</main>
+
