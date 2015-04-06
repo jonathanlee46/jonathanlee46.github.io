@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <title>Of Variables and Scope</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+
+  <div id="header">
+    <p>
+      WELCOME TO MY BLOG!
+    </p>
+  </div>
+
+  <hr>
+
+
+  <div id="links">
+
+    <p>
+      Links go here
+    </p>
+  </div>
+
+  <div id="article">
+
+    <h1>Of Variables and Scope</h1>
+    <h4>April 4, 2015</h4>
+
+    <section>
+      <p>
+        Variables are one of the tiniest and yet most important cogs of what makes programs work.  We cannot have programs without variables.  To this end, keeping track of the sheer amount of variables that larger and larger programs will begin to use is a heady task indeed.  In order to help us coders try to properly organize and keep our variables in check, we must make good use of scope.  
+      </p>
+      <p>
+        What is scope?  Scope is the "level" or "scale" of each block and line of code that we write.  In the vast ocean of our code, we will have lots of differently sized objects.  The ocean itself can be seen as each one of our programs.  An island or landmass in the ocean could be a class.  Then houses built on these islands could be methods within our classes.  We will need to use variables in each of these different "scales", but this is where we must be careful.  Do our variables belong to a specific class?  Do other classes need to see these variables or not?  Are we just using one as a counter that can be thrown away?  
+      </p>
+      <p>
+        This is where Variable Scope comes in.  In ruby specifically, there are many levels of variable scope.  The top level is called a global variable, marked with $.  This is a variable accessible and changeable by any line or block of code in the entire program.  This is probably not a great variable to use, because if any method or class or instances of a class can change it willy nilly, it'll be far too hard to keep track of over a longer program, or a program with multiple classes and objects.  
+      </p>
+      <p>
+        Next we have the class variables, marked with @@.  This is a variable that exists within classes, and can be called upon anywhere within the class it is created.  This includes methods within the class, too!  And even multiple calls of the same class can all use this same @@ variable.
+      </p>
+      <p>
+        Next we have instance variables, marked with @.   They're the same as the class variable above, but these are especially cool because they are "instanced".  That means that the same class, called multiple times, can each have its own @variable that differs from every other instance of the called class.  This is hugely important because of the processing we must do in the methods of each class.  
+      </p>
+      <p>
+        Finally, we have local variables.  These variables are unmarked, and only exist within that block of code.  That means they can be used in loops and methods, and will not leave these blocks.  If you want to be cryptic and call all of your local variables "x", you can do this in multiple methods and classes and no one will be the wiser!
+      </p>
+      <p>
+        One exception to these is the CONSTANT variable, marked with allcaps.  These variables are ones that cannot be changed and will always be constant and useable in our calculations.  Things such as 100 cents to a dollar, 24 hours to a day, or -9.8m/s2 for gravity.  CONSTANTS declared in the ocean of our program will be global.  CONSTANTS created inside of classes will be only class-wide.  Thus, this is a variable that has...variable scope!
+      </p>
+
+    </section>
+  </div>
+</main>
+
