@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Of Ruby Hashes and Arrays</title>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1 class="header-heading">Of Ruby Hashes and Arrays</h1>
+			</div>
+			<div class="nav-bar">
+				<ul class="nav">
+					<li> Links: </li>
+					<li><a href="http://ruby-doc.org/core-2.2.0/Array.html">Ruby Docs: Arrays</a></li>
+					<li><a href="http://ruby-doc.org/core-2.2.0/Hash.html">Ruby Docs: Hashes</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="main">
+
+					<!-- Heading Arrays-->
+					<h1>Ruby Arrays</h1>
+
+					<!-- Paragraphs -->
+					<h3>Creating Arrays</h3>
+					<p>
+						A new array can be created by using the literal constructor []. Arrays can contain different types of objects.  An array can also be created by explicitly calling ::new with zero, one (the initial size of the Array) or two arguments (the initial size and a default object).  To create an array with separate objects a block can be passed instead.  An array can also be created by using the Array() method, provided by Kernel, which tries to call to_ary, then to_a on its argument.
+					</p>
+
+					<h3>Accessing Elements</h3>
+					<p>
+						Elements in an array can be retrieved using the #[] method. It can take a single integer argument (a numeric index), a pair of arguments (start and length) or a range. Negative indices start counting from the end, with -1 being the last element.  The slice method works in an identical manner to #[]. To raise an error for indices outside of the array bounds or else to provide a default value when that happens, you can use fetch.  The special methods first and last will return the first and last elements of an array, respectively.  
+					</p>
+
+					<h3>Adding Items to Arrays</h3>
+					<p>
+						Items can be added to the end of an array by using either push or <<.  Unshift will add a new item to the beginning of an array.  With insert you can add a new element to an array at any position.  Using the insert method, you can also insert multiple values at once.
+					</p>
+
+
+					<hr>
+
+					<h1>Ruby Hashes</h1>
+
+					<h3>What are hashes?</h3>
+					<p>
+						A Hash is a dictionary-like collection of unique keys and their values. Also called associative arrays, they are similar to Arrays, but where an Array uses integers as its index, a Hash allows you to use any object type.  Hashes enumerate their values in the order that the corresponding keys were inserted.
+					</p>
+
+					<h3>Common Uses</h3>
+					<p>
+						Hashes are an easy way to represent data structures.  Hashes are also commonly used as a way to have named parameters in functions. Note that no brackets are used below. If a hash is the last argument on a method call, no braces are needed, thus creating a really clean interface.  
+					</p>
+
+					<h3>Hash Keys</h3>
+					<p>
+						Two objects refer to the same hash key when their hash value is identical and the two objects are eql? to each other.  A user-defined class may be used as a hash key if the hash and eql? methods are overridden to provide meaningful behavior. By default, separate instances refer to separate hash keys.  A typical implementation of hash is based on the object’s data while eql? is usually aliased to the overridden == method.
+					</p>
+
+				</div>
+			</div>
+			<div class="footer">
+				Go Skippers!
+			</div>
+		</div>
+	</body>
+</html>
